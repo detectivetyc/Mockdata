@@ -3,7 +3,7 @@
 
 import time
 import random
-
+from output import output
 class Aie_volume_log:
 
 	def __init__(self, aie_log):
@@ -81,8 +81,7 @@ class Aie_volume_log:
 		push_string += "}"
 
 		self.aie_log.redis_connection.rpush(self.aie_log.read_conf.gateway_list_name, push_string)
-		print "aie_volume: "
-		print push_string
+		output("aie_volume.log", push_string)
 		return
 
 	def random_bytes(self):

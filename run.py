@@ -12,27 +12,43 @@ from redis_connection import Redis_Connection
 from read_configuration import Read_Configuration
 from set_arp import Set_arp
 from input_table import Input_table
-
 def read_all_file(table_path, table_list, read_conf):
 	mac_ip_table = Input_table(table_path, read_conf.mac_ip_table_name)
-	service_sigid_table = Input_table(table_path, read_conf.service_sigid_table_name)
-	ip_service_table = Input_table(table_path, read_conf.ip_service_table_name)
-	ip_host_table = Input_table(table_path, read_conf.ip_host_table_name)
-	service_url_table = Input_table(table_path, read_conf.service_url_table_name)
-	service_rspcode_table = Input_table(table_path, read_conf.service_rspcode_table_name)
-	sigid_appname_table = Input_table(table_path, read_conf.sigid_appname_table_name)
 	mac_ua_table = Input_table(table_path, read_conf.mac_ua_table_name)
 	table_list["mac-ip"] = mac_ip_table
-	table_list["ip-service"] = ip_service_table
-	table_list["service-sigid"] = service_sigid_table
-	table_list["ip-host"] = ip_host_table
-	table_list["service-url"] = service_url_table
-	table_list["service-rspcode"] = service_rspcode_table
-	table_list["sigid-appname"] = sigid_appname_table
 	table_list["mac-ua"] = mac_ua_table
+	if read_conf.mode == "file":
+		file_table_path = table_path + "file/"
+		download_ip_service_table = Input_table(file_table_path, read_conf.donwload_ip_service_table_name)
+		download_service_appname_table = Input_table(file_table_path, read_conf.donwload_service_appname_table_name)
+		download_ip_host_table = Input_table(file_table_path, read_conf.donwload_ip_host_table_name)
+		download_appname_url_table = Input_table(file_table_path, read_conf.donwload_appname_url_table_name)
+		download_appname_rspcode_table = Input_table(file_table_path, read_conf.donwload_appname_rspcode_table_name)
+		download_appname_sigid_table = Input_table(file_table_path, read_conf.donwload_appname_sigid_table_name)
+		table_list["download-ip-service"] = download_ip_service_table
+		table_list["download-service-appname"] = download_service_appname_table
+		table_list["download-ip-host"] = download_ip_host_table
+		table_list["download-appname-url"] = download_appname_url_table
+		table_list["download-appname-rspcode"] = download_appname_rspcode_table
+		table_list["download-appname-sigid"] = download_appname_sigid_table		
+	else:
+		app_login_table_path = table_path + "app_login/"
+		service_appname_table = Input_table(app_login_table_path, read_conf.service_appname_table_name)
+		ip_service_table = Input_table(app_login_table_path, read_conf.ip_service_table_name)
+		ip_host_table = Input_table(app_login_table_path, read_conf.ip_host_table_name)
+		service_url_table = Input_table(app_login_table_path, read_conf.service_url_table_name)
+		service_rspcode_table = Input_table(app_login_table_path, read_conf.service_rspcode_table_name)
+		service_sigid_table = Input_table(app_login_table_path, read_conf.service_sigid_table_name)
+		table_list["ip-service"] = ip_service_table
+		table_list["service-appname"] = service_appname_table
+		table_list["ip-host"] = ip_host_table
+		table_list["service-url"] = service_url_table
+		table_list["service-rspcode"] = service_rspcode_table
+		table_list["service-sigid"] = service_sigid_table
+
 
 def main():
-	table_path = "/Users/yuchentang/Documents/pythonDoc"
+	table_path = "/Users/yuchentang/Documents/pythonDoc/"
 	config_path = "/Users/yuchentang/Documents/PythonWorkSpace/MockData/"
 	config_filename = "mock_data.conf"
 	table_list = {}

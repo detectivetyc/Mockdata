@@ -11,10 +11,8 @@ class Set_arp:
 
 	def set_arp_table(self):
 		arp_seg_head = "arp#" + self.gw_id + "#"
-		print "arp table: "
 		for key, value in self.mac_ip_table.dict.iteritems():
 			redis_key = arp_seg_head + str(self.mac_ip_table.dict[key])
 			redis_string = str(key)
 			self.redis_connection.set(redis_key, redis_string)
-			print redis_key, redis_string
 			#self.redis_connection.expire(redis_key, 90)

@@ -5,7 +5,7 @@
 class Input_table:
 
 	def __init__(self, path ,filename):
-		self.file = open(path + "/" + filename)
+		self.file = open(path + filename)
 		self.dict = {}
 		self.keys = []
 		self.values = []

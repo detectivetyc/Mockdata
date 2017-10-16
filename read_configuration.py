@@ -27,9 +27,17 @@ class Read_Configuration:
 	def read_Table(self):
 		self.mac_ip_table_name = self.cf.get("table", "mac_ip_table")
 		self.ip_service_table_name = self.cf.get("table", "ip_service_table")
-		self.service_sigid_table_name = self.cf.get("table", "service_sigid_table")
-		self.ip_host_table_name = self.cf.get("table", "ip_host_table")
-		self.service_url_table_name = self.cf.get("table", "service_url_table")
-		self.sigid_appname_table_name = self.cf.get("table", "sigid_appname_table")
-		self.mac_ua_table_name = self.cf.get("table", "mac_ua_table")
-		self.service_rspcode_table_name = self.cf.get("table", "service_rspcode_table")
+
+		self.service_appname_table_name = self.cf.get("app_login_table", "service_appname_table")
+		self.ip_host_table_name = self.cf.get("app_login_table", "ip_host_table")
+		self.service_url_table_name = self.cf.get("app_login_table", "service_url_table")
+		self.service_sigid_table_name = self.cf.get("app_login_table", "service_sigid_table")
+		self.mac_ua_table_name = self.cf.get("app_login_table", "mac_ua_table")
+		self.service_rspcode_table_name = self.cf.get("app_login_table", "service_rspcode_table")
+
+		self.donwload_ip_service_table_name = self.cf.get("download_table", "download_ip_service_table")
+		self.donwload_service_appname_table_name = self.cf.get("download_table", "download_service_appname_table")
+		self.donwload_ip_host_table_name = self.cf.get("download_table", "download_ip_host_table")
+		self.donwload_appname_url_table_name = self.cf.get("download_table", "download_appname_url_table")
+		self.donwload_appname_rspcode_table_name = self.cf.get("download_table", "download_appname_rspcode_table")
+		self.donwload_appname_sigid_table_name = self.cf.get("download_table", "download_appname_sigid_table")
