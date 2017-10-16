@@ -1,0 +1,6 @@
+Box 0xc060001
+Dropbox 0x8060002
+Salesforce 0x8060004
+iCloud 0xc06000a
+OneDrive 0xc06000b
+GoogleDrive 0x406000c

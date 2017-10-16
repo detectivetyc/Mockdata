@@ -1,0 +1,6 @@
+Box /tek/doc/
+Dropbox /abc/bcd/abcd
+Salesforce /cba-abc/aabbcc/
+iCloud /apple/elppa/
+OneDrive /micro/soft/
+GoogleDrive /goo/gle/

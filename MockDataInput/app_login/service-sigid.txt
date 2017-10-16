@@ -1,0 +1,4 @@
+Github 0x401000e
+Google 0x401000c
+Amazon 0x4010013
+Facebook 0x4010016
