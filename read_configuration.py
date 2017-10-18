@@ -2,42 +2,37 @@
 # -*- coding:utf-8 -*-
 import ConfigParser
 
-class Read_Configuration:
+class ReadConfiguration:
 
-	def __init__(self, path, filename):
-		self.cf = ConfigParser.ConfigParser()
-		self.cf.read(path + filename)
-		self.read_Redis()
-		self.read_Basic()
-		self.read_Table()
+		cf = ConfigParser.ConfigParser()
+		cf.read("mock_data.conf")
 
-	def read_Redis(self):
-		self.redis_host = self.cf.get("redis", "redis_host")
-		self.redis_port = self.cf.getint("redis", "redis_port")
-		self.redis_db = self.cf.getint("redis", "redis_db")
-		self.aie_list_name = self.cf.get("redis", "aie_list_name")
-		self.gateway_list_name = self.cf.get("redis", "gateway_list_name")
+		redis_host = cf.get("redis", "redis_host")
+		redis_port = cf.getint("redis", "redis_port")
+		redis_db = cf.getint("redis", "redis_db")
+		aie_list_name = cf.get("redis", "aie_list_name")
+		gateway_list_name = cf.get("redis", "gateway_list_name")
 
-	def read_Basic(self):
-		self.mode = self.cf.get("basic", "mode")
-		self.num = self.cf.getint("basic", "num")
-		self.req_bytes = self.cf.getint("basic", "req_bytes")
-		self.rsp_bytes = self.cf.getint("basic", "rsp_bytes")
+		mode = cf.get("basic", "mode")
+		num = cf.getint("basic", "num")
+		req_bytes = cf.getint("basic", "req_bytes")
+		rsp_bytes = cf.getint("basic", "rsp_bytes")
+		days_delta = cf.getint("basic", "days_delta")
+		minutes_delta = cf.getint("basic", "minutes_delta")
 
-	def read_Table(self):
-		self.mac_ip_table_name = self.cf.get("table", "mac_ip_table")
-		self.ip_service_table_name = self.cf.get("table", "ip_service_table")
+		mac_ip_table_name = cf.get("table", "mac_ip_table")
+		ip_service_table_name = cf.get("table", "ip_service_table")
 
-		self.service_appname_table_name = self.cf.get("app_login_table", "service_appname_table")
-		self.ip_host_table_name = self.cf.get("app_login_table", "ip_host_table")
-		self.service_url_table_name = self.cf.get("app_login_table", "service_url_table")
-		self.service_sigid_table_name = self.cf.get("app_login_table", "service_sigid_table")
-		self.mac_ua_table_name = self.cf.get("app_login_table", "mac_ua_table")
-		self.service_rspcode_table_name = self.cf.get("app_login_table", "service_rspcode_table")
+		service_appname_table_name = cf.get("app_login_table", "service_appname_table")
+		ip_host_table_name = cf.get("app_login_table", "ip_host_table")
+		service_url_table_name = cf.get("app_login_table", "service_url_table")
+		service_sigid_table_name = cf.get("app_login_table", "service_sigid_table")
+		mac_ua_table_name = cf.get("app_login_table", "mac_ua_table")
+		service_rspcode_table_name = cf.get("app_login_table", "service_rspcode_table")
 
-		self.donwload_ip_service_table_name = self.cf.get("download_table", "download_ip_service_table")
-		self.donwload_service_appname_table_name = self.cf.get("download_table", "download_service_appname_table")
-		self.donwload_ip_host_table_name = self.cf.get("download_table", "download_ip_host_table")
-		self.donwload_appname_url_table_name = self.cf.get("download_table", "download_appname_url_table")
-		self.donwload_appname_rspcode_table_name = self.cf.get("download_table", "download_appname_rspcode_table")
-		self.donwload_appname_sigid_table_name = self.cf.get("download_table", "download_appname_sigid_table")
+		donwload_ip_service_table_name = cf.get("download_table", "download_ip_service_table")
+		donwload_service_appname_table_name = cf.get("download_table", "download_service_appname_table")
+		donwload_ip_host_table_name = cf.get("download_table", "download_ip_host_table")
+		donwload_appname_url_table_name = cf.get("download_table", "download_appname_url_table")
+		donwload_appname_rspcode_table_name = cf.get("download_table", "download_appname_rspcode_table")
+		donwload_appname_sigid_table_name = cf.get("download_table", "download_appname_sigid_table")

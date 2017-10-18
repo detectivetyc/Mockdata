@@ -4,15 +4,99 @@
 import time
 import random
 import string
+import sys
 from output import output
+from datetime import datetime
+from datetime import timedelta
+from read_configuration import ReadConfiguration
 
+
+class AieLog(ReadConfiguration):
+	def __init__(self, redis_connection, table_list):
+		self.redis_connection = redis_connection
+		self.table_list = table_list
+	def log_init(self):
+		# timestamp
+		self.timestamp = self.generate_timestamp()
+		# gw_id
+		self.gw_id = "G011609F3C98"
+		# aie_id
+		self.aie_id = "HOLOFLOW_IN_TEST"
+		# mac, src_ip, dst_ip, service got in get_ip_port_session()
+		# ip_seg
+		self.ip_seg = self.get_ip_port_session()
+		# log_tyep
+		self.log_type = 1
+		# log_version
+		self.log_version = 1
+		# log_id
+		self.log_id = random.randint(1, 999999)
+		# log_seq_num
+		self.log_seq_num = 0
+		# log_lf
+		self.log_lf = 0
+		# user agent
+		self.ua = self.get_ua()
+		# method
+		self.method = ["POST", "PUT", "GET", "CONNECT", "HEAD", "OPTIONS", "TRACE"]  # hard coded
+		# t_ra_email (hard coded)
+		self.t_ra_email = "tony@holonetsecurity.com"
+		# rsp_latency
+		self.rsp_latency = 101
+		# appname
+		self.appname = self.get_appname()
+		# download-sigid
+		self.sigid = self.get_sigid()
+		# download-host
+		self.host = self.get_host()
+		# activity
+		self.activity = "download"
+		# url
+		self.url = self.get_url()
+		# rsp_code
+		self.rsp_code = self.get_rspcode()
+		# file objects
+		# type
+		self.obj_type = "file"
+		# obj_name
+		self.obj_name = self.generate_random_name(8) + '.doc'
+		# obj_hash
+		self.obj_hash = self.generate_random_hash()
+		# obj_size
+		self.obj_size = random.randint(2000, 99999)
+		# file message body
+		self.file_message_body = self.generate_file_log()
+		# login_name
+		self.login_name = self.get_login_name()
+	def generate_timestamp(self):
+		pass
+	def get_ip_port_session(self):
+		pass
+	def get_ua(self):
+		pass
+	def get_appname(self):
+		pass
+	def get_sigid(self):
+		pass
+	def get_host(self):
+		pass
+	def get_url(self):
+		pass
+	def get_rspcode(self):
+		pass
+	def generate_random_name(self, size):
+		pass
+	def generate_random_hash(self, size = 32):
+		pass
+	def generate_file_log(self):
+		pass
+	def get_login_name(self):
+		pass
 class Aie_log:
 
-	def __init__(self, mode, redis_connection, read_conf, path, table_list):
-		self.path = path
+	def __init__(self, mode, redis_connection, table_list):
 		self.mode = mode
 		self.redis_connection = redis_connection
-		self.read_conf = read_conf
 		self.table_list = table_list
 		
 	def log_init(self):
@@ -39,7 +123,7 @@ class Aie_log:
 		#user agent
 		self.ua = self.get_ua()
 		#method
-		self.method = ["POST", "PUT", "GET", "CONNECT", "HEAD", "OPTIONS", "TRACE"]
+		self.method = ["POST", "PUT", "GET", "CONNECT", "HEAD", "OPTIONS", "TRACE"] #hard coded
 		#t_ra_email (hard coded)
 		self.t_ra_email = "tony@holonetsecurity.com"
 		#rsp_latency
@@ -83,7 +167,7 @@ class Aie_log:
 			#rsp_code
 			self.rsp_code = self.get_rspcode()
 			#login_name
-			self.login_name = "tony@holonetsecurity.com"
+			self.login_name = "tony@holonetsecurity.com"   #can be configured by configuration file
 			if self.mode == "app":
 				self.app_message_body = self.generate_app_log()
 				ret = self.push_log()
@@ -104,7 +188,7 @@ class Aie_log:
 	def generate_app_log(self):
 		app_message_body = "{"
 		app_message_body += "\"host\":" + "\"" + self.host + "\","
-		app_message_body += "\"method\":" + "\"POST\"," #hard code 
+		app_message_body += "\"method\":" + "\"POST\"," #hard coded
 		app_message_body += "\"url\":" + "\"" + self.url + "\"," 
 		app_message_body += "\"t_ra_email\":" + "\"" + self.t_ra_email + "\","
 		app_message_body += "\"rsp_code\":" + "\"" + self.rsp_code + "\","
@@ -115,11 +199,11 @@ class Aie_log:
 	def generate_file_log(self):
 		file_message_body = "{"
 		file_message_body += "\"host\":" + "\"" + self.host + "\","
-		file_message_body += "\"method\":" + "\"GET\", " #hard code
+		file_message_body += "\"method\":" + "\"GET\", " #hard coded
 		file_message_body += "\"url\":" + "\"" + self.url + "\","
 		file_message_body += "\"user_agent\":" + "\"" + self.ua + "\","
 		file_message_body += "\"rsp_code\":" + "\"" + self.rsp_code + "\","
-		file_message_body += "\"rsp_content_type\":" + "\"application/x-msdownload\"," #hard code
+		file_message_body += "\"rsp_content_type\":" + "\"application/x-msdownload\"," #hard coded
 		file_message_body += "\"rsp_latency\":" + str(self.rsp_latency) + ","
 		file_message_body += "\"activity\":" + "\"" + self.activity + "\","
 		file_message_body += "\"objs\":[{" + "\"type\":" + "\"" + self.obj_type +"\","
@@ -141,7 +225,10 @@ class Aie_log:
 		return login_message_body
 
 	def generate_timestamp(self):
-		return time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime(time.time()))
+		time_show = datetime.now()
+		delta = timedelta(days = self.days_delta, minutes = self.read_conf.minutes_delta)
+		time_show = time_show + delta
+		return time_show.strftime("%Y-%m-%dT%H:%M:%S")
 
 	def get_ip_port_session(self):
 		#src
