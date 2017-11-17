@@ -1,4 +1,0 @@
-Github github.com/Stratusee/AIE.git/info/refs
-Google accounts.google.com/_/common/diagnostics/
-Amazon www.amazon.com/
-Facebook www.facebook.com/pubcontent/suggestions/impression_logging/

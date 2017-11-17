@@ -1,0 +1,36 @@
+import threading
+import psutil
+import time
+from app_log import AppLog
+from redis_connection import RedisConnection
+from read_configuration import ReadConfiguration
+from aie_volume_log import AieVolumeLog
+from user import User
+
+class AppLogThread(threading.Thread):
+    def __init__(self, threadID, name, log_num, table):
+        threading.Thread.__init__(self)
+        self.threadID = threadID
+        self.name = name
+        self.log_num = log_num
+        self.table = table
+    def run(self):
+        print "Starting " + self.name + '\n'
+        run_app_log(self.name, self.log_num, self.table)
+        print "Ending " + self.name
+
+redis_instance = RedisConnection(ReadConfiguration.redis_port, ReadConfiguration.redis_host, ReadConfiguration.redis_db)
+def run_app_log(threadName, log_num, table):
+    for i in range(log_num):
+        #print 'memory used: ', psutil.Process(os.getpid()).memory_info().rss
+        user = User(table)
+        app_log = AppLog(redis_instance.redis_connection, table, user)
+        app_volume_log = AieVolumeLog(app_log)
+        app_log.log_process()
+        time.sleep(2)
+        app_volume_log.log_process()
+        del user
+        del app_log
+        del app_volume_log
+
+

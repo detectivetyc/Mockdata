@@ -1,4 +1,0 @@
-192.30.253.113 github.com
-216.58.195.77 accounts.google.com
-104.86.195.116 www.amazon.com
-31.13.77.36 www.facebook.com

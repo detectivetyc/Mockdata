@@ -1,38 +1,51 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-import ConfigParser
+import yaml
 
 class ReadConfiguration:
 
-		cf = ConfigParser.ConfigParser()
-		cf.read("mock_data.conf")
-
-		redis_host = cf.get("redis", "redis_host")
-		redis_port = cf.getint("redis", "redis_port")
-		redis_db = cf.getint("redis", "redis_db")
-		aie_list_name = cf.get("redis", "aie_list_name")
-		gateway_list_name = cf.get("redis", "gateway_list_name")
-
-		mode = cf.get("basic", "mode")
-		num = cf.getint("basic", "num")
-		req_bytes = cf.getint("basic", "req_bytes")
-		rsp_bytes = cf.getint("basic", "rsp_bytes")
-		days_delta = cf.getint("basic", "days_delta")
-		minutes_delta = cf.getint("basic", "minutes_delta")
-
-		mac_ip_table_name = cf.get("table", "mac_ip_table")
-		ip_service_table_name = cf.get("table", "ip_service_table")
-
-		service_appname_table_name = cf.get("app_login_table", "service_appname_table")
-		ip_host_table_name = cf.get("app_login_table", "ip_host_table")
-		service_url_table_name = cf.get("app_login_table", "service_url_table")
-		service_sigid_table_name = cf.get("app_login_table", "service_sigid_table")
-		mac_ua_table_name = cf.get("app_login_table", "mac_ua_table")
-		service_rspcode_table_name = cf.get("app_login_table", "service_rspcode_table")
-
-		donwload_ip_service_table_name = cf.get("download_table", "download_ip_service_table")
-		donwload_service_appname_table_name = cf.get("download_table", "download_service_appname_table")
-		donwload_ip_host_table_name = cf.get("download_table", "download_ip_host_table")
-		donwload_appname_url_table_name = cf.get("download_table", "download_appname_url_table")
-		donwload_appname_rspcode_table_name = cf.get("download_table", "download_appname_rspcode_table")
-		donwload_appname_sigid_table_name = cf.get("download_table", "download_appname_sigid_table")
+	mock_conf_yaml = open("MockDataInput/mock_conf.yaml")
+	mock_conf = yaml.load(mock_conf_yaml)
+	#redis configuration
+	redis_dict = mock_conf['redis']
+	aie_list_name = redis_dict['aie_list_name']
+	aie_volume_list_name = redis_dict['aie_volume_list_name']
+	content_scan_list_name = redis_dict['content_scan_list_name']
+	redis_port = redis_dict['redis_port']
+	redis_host = redis_dict['redis_host']
+	redis_db = redis_dict['redis_db']
+	#basic
+	app_log_num = mock_conf['log_num']['app_log_num']
+	login_log_num = mock_conf['log_num']['login_log_num']
+	download_log_num = mock_conf['log_num']['download_log_num']
+	upload_log_num = mock_conf['log_num']['upload_log_num']
+	#sql input file name
+	sql_dict = mock_conf['sql']
+	activity_sql_name = sql_dict['activity']
+	context_sql_name = sql_dict['context']
+	element_sql_name = sql_dict['element']
+	service_sql_name = sql_dict['service']
+	#Input user table
+	user_table_path = mock_conf['user_table']['path']
+	user_table_name = mock_conf['user_table']['name']
+	#Input device table
+	device_table_path = mock_conf['device_table']['path']
+	device_table_name = mock_conf['device_table']['name']
+	#Input app table
+	app_table_path = mock_conf['app_table']['path']
+	app_table_name = mock_conf['app_table']['name']
+	#Download table
+	download_table_path = mock_conf['download_table']['path']
+	download_table_name = mock_conf['download_table']['name']
+	#Upload table
+	upload_table_path = mock_conf['upload_table']['path']
+	upload_table_name = mock_conf['upload_table']['name']
+	#Time set
+	days = mock_conf['time']['days']
+	hours = mock_conf['time']['hours']
+	mins = mock_conf['time']['mins']
+	#GW & AIE
+	gw_id = mock_conf['gw_id']
+	aie_id = mock_conf['aie_id']
+	#Output Path
+	output_path = mock_conf['Output']['path']

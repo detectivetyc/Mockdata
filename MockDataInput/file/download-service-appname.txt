@@ -1,6 +1,0 @@
-Box Box
-Dropbox Dropbox
-Salesforce Salesforce
-iCloud iCloud
-OneDrive OneDrive
-Google GoogleDrive
