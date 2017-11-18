@@ -18,10 +18,10 @@ def main():
 	redis_instance = RedisConnection(ReadConfiguration.redis_port, ReadConfiguration.redis_host, ReadConfiguration.redis_db)
 	table = Table()
 	SetArp(redis_instance.redis_connection, table)
-
-	app_thread = AppLogThread(1, "App-Thread", ReadConfiguration.app_log_num, table)
-	file_thread = FileLogThread(2, "File-Thread", ReadConfiguration.download_log_num, ReadConfiguration.upload_log_num, table)
-	login_thread = LoginLogThread(3, "Login-Thread", ReadConfiguration.login_log_num, table)
+	buffer = {}
+	app_thread = AppLogThread(1, "App-Thread", ReadConfiguration.app_log_num, table, buffer)
+	file_thread = FileLogThread(2, "File-Thread", ReadConfiguration.download_log_num, ReadConfiguration.upload_log_num, table, buffer)
+	login_thread = LoginLogThread(3, "Login-Thread", ReadConfiguration.login_log_num, table, buffer)
 
 	app_thread.start()
 	file_thread.start()

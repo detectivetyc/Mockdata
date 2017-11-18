@@ -9,9 +9,9 @@ class LoginLog(AieLog):
 
     def get_sigid(self):
         return ReadSQL.get_event_sigid_from_sql(self.user.appname, self.table.activity_sql.list, 'login')
-    def message_body_process(self, user):
+    def message_body_process(self, buffer):
         #use ReadSQL.get_element_by_sigid make sure which part is required
-        part_dict = generate_body_part(self.table.element_sql.list, self.sigid, user, self.table, self.session_id)
+        part_dict = generate_body_part(self.table.element_sql.list, self.sigid, self.user, self.table, self.session_id)
         message_body = "{"
         for key, value in part_dict.iteritems() :
             if key == 'host' :

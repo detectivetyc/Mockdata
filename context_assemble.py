@@ -50,14 +50,19 @@ def handle_context(context_dict, user, table, session_id, sigid):
         part_dict[temp_dict.keys()[0]] = temp_dict.values()[0]
     if len(part_dict) < 1:
         sys.exit("some thing wrong with context")
+        #special case for 0x4050000 and 0x4060000
+    if sigid == "'0x4050000'" or sigid == "'0x4060000'":
+        hash = generate_random_hash()
+        part_dict['file_hash'] = hash
     return part_dict
 
 def generate_body_part(element_list, sigid, user, table, session_id):
     context_dict = ReadSQL.get_element_by_sigid(sigid, table.element_sql.list)
-    if user.appname == 'Dropbox':
-        context_dict['http_req_method'] = 'method'
-        context_dict['http_req_host'] = 'host'
-        context_dict['http_req_url'] = 'url'
+    if user.event == 'download' or user.event == 'upload':
+        if user.appname == 'Dropbox':
+            context_dict['http_req_method'] = 'method'
+            context_dict['http_req_host'] = 'host'
+            context_dict['http_req_url'] = 'url'
     part_dict = handle_context(context_dict, user, table, session_id, sigid)
     return part_dict
 

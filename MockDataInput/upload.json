@@ -2,7 +2,7 @@
     "Restful" : {
         "ip" : "54.85.229.0",
         "url" : "/admin/uplog/",
-        "host" : "log.zoom.us",
+        "host" : "www.google.com",
         "rsp_code" : "200"
     },
     "Box" : {

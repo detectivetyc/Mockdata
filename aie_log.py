@@ -14,7 +14,7 @@ class AieLog():
         # timestamp
         self.timestamp = self.generate_timestamp()
 
-    def log_process(self):
+    def log_process(self, buffer):
         # gw_id
         gw_id = ReadConfiguration.gw_id
         # aie_id
@@ -40,7 +40,7 @@ class AieLog():
                        + self.sigid[1: len(self.sigid) - 1] + " " + str(log_version) + " " \
                        + str(log_id) + " " + str(log_seq_num) + " " + str(log_lf)
         # log message body
-        message_body = self.message_body_process(self.user)
+        message_body = self.message_body_process(buffer)
         # log assemble
         log = message_head + " " + message_body
         # push log into redis server
@@ -81,7 +81,7 @@ class AieLog():
     def get_sigid(self):
         return "'0x7ff0000'"
 
-    def message_body_process(self, user):
+    def message_body_process(self, buffer):
         # handle message_body at child class
         # should be rewritten at child class
         body = "{"

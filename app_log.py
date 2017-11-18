@@ -7,8 +7,8 @@ from context_assemble import generate_body_part
 import sys
 class AppLog(AieLog):
 
-    def message_body_process(self, user):
-        part_dict = generate_body_part(self.table.element_sql.list, self.sigid, user, self.table, self.session_id)
+    def message_body_process(self, buffer):
+        part_dict = generate_body_part(self.table.element_sql.list, self.sigid, self.user, self.table, self.session_id)
         message_body = "{"
         for key, value in part_dict.iteritems():
             if key == 'host' :

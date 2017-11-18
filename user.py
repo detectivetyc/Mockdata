@@ -2,8 +2,8 @@ import random
 
 class User():
     def __init__(self, table, event=None):
-        #self.user_id = random.choice(table.user_list)
-        self.user_id = 'User_1'
+        self.user_id = random.choice(table.user_list)
+        #self.user_id = 'User_1'
         self.device_id = table.randomly_get_device_id(self.user_id)
         self.event = event
         if event is None:

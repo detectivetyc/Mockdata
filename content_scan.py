@@ -9,7 +9,7 @@ class ContentScanLog():
         if risk is not None:
             self.risk = risk
 
-    def log_process(self):
+    def log_process(self, buffer):
         push_string = "{\"objs\":[{"
         # id
         id = 0
