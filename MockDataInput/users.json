@@ -1,0 +1,402 @@
+{
+	"User_1": {
+		"alias" : ["user1_1@gmail.com", "user1_2@hotmail.com"],
+		"devices" : ["mac_1"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": "AABB.txt"
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": "AABB.txt"
+			}
+		},
+		"special" : "same_file"
+	},
+	"User_2": {
+		"alias" : ["user2@yahoo.com"],
+		"devices" : ["linux_1", "windows_1"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_3": {
+		"alias" : ["user3_1@yahoo.com", "user3_2@gmail.com", "user3_3@hotmail.com"],
+		"devices" : ["linux_2"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_4": {
+		"alias" : ["user4_1@163.com", "user4_2@sina.com"],
+		"devices" : ["windows_2", "mac_2"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_5": {
+		"alias" : ["user5_1@gmail.com", "user5_2@yahoo.com"],
+		"devices" : ["mac_3"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_6": {
+		"alias" : ["user6_1@hotmail.com", "user6_2@gmail.com"],
+		"devices" : ["mac_4"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_7": {
+		"alias" : ["user7_1@163.com", "user7_2@qq.com"],
+		"devices" : ["mac_5", "windows_3"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_8": {
+		"alias" : ["user8_1@sina.com", "user8_2@gmail.com"],
+		"devices" : ["mac_6", "linux_3"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_9": {
+		"alias" : ["user9_1@hotmail.com", "user9_2@gmail.com"],
+		"devices" : ["mac_7"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_10": {
+		"alias" : ["user10_1@yahoo.com"],
+		"devices" : ["mac_8"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_11": {
+		"alias" : ["user11_1@hotmail.com", "user11_2@gmail.com"],
+		"devices" : ["mac_9"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_12": {
+		"alias" : ["user12_1@hotmail.com", "user12_2@163.com"],
+		"devices" : ["mac_10"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_13": {
+		"alias" : ["user13_1@qq.com", "user13_2@gmail.com"],
+		"devices" : ["mac_11"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_14": {
+		"alias" : ["user14_1@yahoo.com", "user14_2@gmail.com"],
+		"devices" : ["mac_12"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_15": {
+		"alias" : ["user15_1@hotmail.com", "user15_2@163.com"],
+		"devices" : ["mac_13"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_16": {
+		"alias" : ["user16_1@qq.com", "user16_2@hotmail.com"],
+		"devices" : ["mac_14", "windows_4"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_17": {
+		"alias" : ["user17_1@gmail.com", "user17_2@yahoo.com"],
+		"devices" : ["mac_15"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_18": {
+		"alias" : ["user18_1@163.com", "user18_2@126.com", "user18_3@qq.com"],
+		"devices" : ["mac_16"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_19": {
+		"alias" : ["user19_1@hotmail.com", "user19_2@126.com"],
+		"devices" : ["linux_4"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	},
+	"User_20": {
+		"alias" : ["user20_1@qq.com", "user20_2@sina.com"],
+		"devices" : ["windows_5"],
+		"apps" : ["all"],
+		"event" : {
+			"download" : {
+				"apps": ["Restful"],
+				"pattern_name" : ["all"],
+				"subfile": "false",
+				"filename": ""
+			},
+			"upload" : {
+				"apps": ["Restful"],
+				"pattern_name": ["all"],
+				"subfile": "false",
+				"filename": ""
+			}
+		},
+		"special" : null
+	}
+}

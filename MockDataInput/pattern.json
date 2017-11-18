@@ -1,0 +1,299 @@
+{
+    "content_scan": [
+        {
+            "id" : 100001,
+            "name": "SSN",
+            "desc": "Social Security Number and Keyword",
+            "element": [
+                {
+                    "pattern": {
+                        "text":"\\b\\d{3}[-|\\s]?\\d{2}[-|\\s]?\\d{4}\\b",
+                        "flag": "m"
+                    }
+                },
+                 {
+                     "pattern": {
+                         "text": "\\bSSN|Social\\sSecurity\\s#|SSN#|SSNID|social\\ssecurity\\snumber|Soc\\sSec#|Soc#|SS#|SS\\s#|Tax\\sID|Tax-ID\\b",
+                         "flag": "sm"
+                     }
+                 }
+            ],
+            "group": "PII",
+            "action" : "log"
+        },
+        {
+            "id" : 100002,
+            "name": "Visa Card",
+            "desc" : "Visa Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text" : "\\b4\\d{3}[\\s|-|,]?(?:\\d{4}[\\s|-|,]?){2}\\d{1,4}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action" : "log"
+        },
+        {
+            "id": 100003,
+            "name": "Master Card",
+            "desc": "Master Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b5[1-5]\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }],
+                "group": "PCI",
+                "action": "log"
+        },
+        {
+            "id": 100004,
+            "name": "American Express Card",
+            "desc": "American Experss Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b3[47]\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\d{3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 100005,
+            "name": "Carte Blanche Card",
+            "desc": "Carte Blanche Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b389\\d[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\d{2}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 100006,
+            "name": "Diners Club Card",
+            "desc": "Diners Club Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b3(?:0[0-5]|[68]\\d)\\d[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\d{2}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 100007,
+            "name": "Discover Card",
+            "desc": "Dsicover Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:(?:65|64)[4-9]\\d|6011)[\\s|-]?(?:\\d{4}[\\s|-]?){3}|6221[\\s|-]?2[6-9]\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){2}|6221[\\s|-]?[3-9]\\d{3}[\\s|-]?(?:\\d{4}[\\s|-]?){2}|622[2-8][\\s|-]?(?:\\d{4}[\\s|-]?){3}|6229[\\s|-]?[01]\\d{3}[\\s|-]?(?:\\d{4}[\\s|-]?){2}|6229[\\s|-]?2[0-5]\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 100008,
+            "name": "JCB Card",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:2131|1800|35\\d{2})[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\d{3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+
+        },
+        {
+            "id": 1010, 
+            "name": "Insta Payment Card",
+            "desc": "Insta Payment Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b63[7-9]\\d[\\s|-]?(?:\\d{4}[\\s|-]?){3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1011, 
+            "name": "Laser Card",
+            "desc": "Laser Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:6304|6706|6709|6771)[\\s|-]?(?:\\d{4}[\\s|-]?){3}(?:\\d{3})?\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1012, 
+            "name": "Maestro Card",
+            "desc": "Maestro Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:5018|5020|5038|6304|6759|6761|6763)[\\s|-]?(?:(\\d{4}[\\s|-]?){2}|(\\d{4}[\\s|-]?){3}\\d{3})\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1013, 
+            "name": "Solo Card",
+            "desc": "Solo Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:6334|6767)[\\s|-]?(?:\\d{4}[\\s|-]?){3}|(?:6334|6767)[\\s|-]?(?:\\d{4}[\\s|-]?){3}\\d{2,3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1014, 
+            "name": "Switch Card",
+            "desc" : "Switch Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:4903|4905|4911|4936|6333|6759)[\\s|-]?(?:\\d{4}[\\s|-]?){3}(?:\\d{2,3})?|5641[\\s|-]?82\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){2}(?:\\d{2,3})?|6331[\\s|-]?10\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){2}(?:\\d{2,3})?\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1015, 
+            "name": "Union Pay Card",
+            "desc": "Union Pay Card Number",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b62\\d{2}[\\s|-]?(?:\\d{4}[\\s|-]?){3}(\\d{3})?\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1016, 
+            "name": "Korean LocalCard",
+            "desc": "Korean LocalCard Number",
+            "enable": false,
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b9\\d{3}[\\s|-]?(?:\\d{4}[\\s|-]?){3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1017, 
+            "name": "BC Global",
+            "desc": "BC Global Card Number",
+            "enable": false,
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:6541|6556)[\\s|-]?(?:\\d{4}[\\s|-]?){3}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+        {
+            "id": 1018, 
+            "name": "Rupay Debit Card",
+            "desc": "Rupay Debit Card Number",
+            "enable" : false,
+            "element": [
+                {
+                    "pattern": {
+                        "text": "\\b(?:508[5-9]|607[0-8]|652[2-9]|608[0-5]|6530)[\\s|-]?(?:\\d{4}[\\s|-]?){3}|(?:6079[\\s|-]?[0-8]|6069[\\s|-]?[8-9]|6521[\\s|-]?[5-9]|6531[\\s|-]?[0-4])\\d{3}[\\s|-]?(?:\\d{4}[\\s|-]?){2}\\b",
+                        "flag": "ml",
+                        "check": true
+                    }
+                }
+            ],
+            "group": "PCI",
+            "action": "log"
+        },
+		{
+            "id": 300002,
+            "name": "SourceCode File",
+            "desc": "SourceCode File Type",
+            "element": [
+                {
+                    "pattern": {
+                        "text": "text/x-java|text/x-c|text/x-c\\+\\+|text/x-python|text/x-php|text/x-javascript|text/x-asm|text/x-ruby|text/x-perl|text/x-shellscript|text/x-pascal|application/x-sqlite3|text/x-lisp|text/x-lua|text/x-makefile|text/x-tcl|text/x-m4|text/x-objective-c|text/css"
+                    },
+                    "method": "filetype"
+                }
+            ],
+            "group": "Source Code",
+            "action": "log"
+        }
+    ]
+}
+

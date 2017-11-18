@@ -1,0 +1,63 @@
+#redis configuration
+redis:
+  aie_list_name: aie
+  aie_volume_list_name: aie_volume
+  content_scan_list_name: file_content_scan
+  redis_port: 6379
+  redis_host: dev-ds.holonetsecurity.com
+  redis_db: 0
+#SQL configuration
+sql:
+  activity: activity.sql
+  context: context.sql
+  element: element.sql
+  service: service.sql
+#how many logs(different types) do you want?
+log_num:
+  app_log_num: 20
+  login_log_num: 40
+  download_log_num: 100
+  upload_log_num: 0
+#gw & aie configuration
+#dev
+gw_id: G981711B24DB
+aie_id: SNA0017039A50D
+#product
+#gw_id: G011609F3C98
+#aie_id: HOLOFLOW_IN_TEST
+#parameters that we want to control
+#user: login name(alias), ip(arbitrary private ip is ok)
+#device: mac address(half real), ip(arbitrary private ip is ok), ua(half real)
+#app: service, appname, sigid, activity
+#file: activity, file name, file size, is sensitive?, hash?
+#others: time
+#user info input path & name
+user_table:
+  path: MockDataInput/
+  name: users.json
+#device info input path & name
+device_table:
+  path: MockDataInput/
+  name: devices.json
+#app info input path & name
+app_table:
+  path: MockDataInput/
+  name: app.json
+#download info input path & name
+download_table:
+  path: MockDataInput/
+  name: download.json
+#upload info input path & name
+upload_table:
+  path: MockDataInput/
+  name: upload.json
+#Time set
+#default is 7 days period
+#if you want just the data for 24 hours, set days to 0
+time:
+  days: 0
+  hours: 4
+  mins: 59
+#Output Path
+Output:
+  path: /Users/yuchentang/Desktop/MockDataLog/11.17/

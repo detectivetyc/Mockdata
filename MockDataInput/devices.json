@@ -1,0 +1,127 @@
+{
+	"mac_1" : {
+		"mac" : "64:00:6a:72:f0:37",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+		"ip" : "192.168.10.100"
+	},
+	"mac_2" : {
+		"mac" : "64:00:6a:72:f0:36",
+		"ua" : "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36",
+		"ip" : "192.168.10.101"
+	},
+	"mac_3" : {
+		"mac" : "64:00:6a:72:f0:35",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36",
+		"ip" : "192.168.10.102"
+	},
+	"mac_4" : {
+		"mac" : "64:00:6a:72:f0:34",
+		"ua" : "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2224.3 Safari/537.36",
+		"ip" : "192.168.10.103"
+	},
+	"mac_5" : {
+		"mac" : "64:00:6a:72:f0:33",
+		"ua" : "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36",
+		"ip" : "192.168.10.104"
+	},
+	"mac_6" : {
+		"mac" : "64:00:6a:72:f0:32",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36",
+		"ip" : "192.168.10.105"
+	},
+	"mac_7" : {
+		"mac" : "64:00:6a:72:f0:31",
+		"ua" : "Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip" : "192.168.10.106"
+	},
+	"mac_8" : {
+		"mac" : "64:00:6a:72:f0:30",
+		"ua" : "Mozilla/5.0 (Windows NT x.y; WOW64; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip" : "192.168.10.107"
+	},
+	"mac_9" : {
+		"mac" : "64:00:6a:72:f0:2f",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko",
+		"ip" : "192.168.10.108"
+	},
+	"mac_10" : {
+		"mac" : "64:00:6a:72:f0:2e",
+		"ua" : "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)",
+		"ip" : "192.168.10.109"
+	},
+	"mac_11" : {
+		"mac" : "64:00:6a:72:f0:2d",
+		"ua" : "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)",
+		"ip" : "192.168.10.110"
+	},
+	"mac_12" : {
+		"mac" : "64:00:6a:72:f0:2c",
+		"ua" : "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; GTB7.4; InfoPath.2; SV1; .NET CLR 3.3.69573; WOW64; en-US)",
+		"ip" : "192.168.10.111"
+	},
+	"mac_13" : {
+		"mac" : "64:00:6a:72:f0:2b",
+		"ua" : "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)",
+		"ip" : "192.168.10.112"
+	},
+	"mac_14" : {
+		"mac" : "64:00:6a:72:f0:2a",
+		"ua" : "Mozilla/5.0 (Windows NT x.y; Win64; x64; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip" : "192.168.10.113"
+	},
+	"mac_15" : {
+		"mac" : "64:00:6a:72:f0:29",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+		"ip" : "192.168.10.114"
+	},
+	"mac_16" : {
+		"mac" : "64:00:6a:72:f0:28",
+		"ua" : "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36",
+		"ip" : "192.168.10.115"
+	},
+	"linux_1" : {
+		"mac" : "5c:51:4f:12:34:56",
+		"ua" : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/4E423F",
+		"ip" : "192.168.11.100"
+	},
+	"linux_2": {
+		"mac": "5c:51:4f:23:45:67",
+		"ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36",
+		"ip": "192.168.11.101"
+	},
+	"linux_3": {
+		"mac": "5c:51:4f:34:56:78",
+		"ua": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip": "192.168.11.102"
+	},
+	"linux_4": {
+		"mac": "5c:51:4f:45:67:89",
+		"ua": "Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip": "192.168.11.103"
+	},
+	"windows_1" : {
+		"mac" : "5c:f9:38:92:95:00",
+		"ua" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36",
+		"ip" : "192.168.12.100"
+	},
+	"windows_2" : {
+		"mac" : "5c:f9:38:92:95:01",
+		"ua" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36",
+		"ip" : "192.168.12.101"
+	},
+	"windows_3" : {
+		"mac" : "5c:f9:38:92:95:02",
+		"ua" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1944.0 Safari/537.36",
+		"ip" : "192.168.12.102"
+	},
+	"windows_4" : {
+		"mac" : "5c:f9:38:92:95:03",
+		"ua" : "Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:10.0) Gecko/20100101 Firefox/10.0",
+		"ip" : "192.168.12.103"
+	},
+	"windows_5" : {
+		"mac" : "5c:f9:38:92:95:04",
+		"ua" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",
+		"ip" : "192.168.12.104"
+	}
+}

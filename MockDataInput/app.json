@@ -1,0 +1,218 @@
+{
+	"Evernote" : {
+		"ip" : "35.186.213.138",
+		"url" : "www.evernote.com/edam/user/",
+		"host" : "www.evernote.com",
+		"rsp_code" : "200"
+	},
+	"Github" : {
+		"ip" : "151.101.0.133",
+		"url" : "github.com/abc/",
+		"host" : "github.com",
+		"rsp_code" : "101"
+	},
+	"Linkedin" : {
+		"ip" : "54.214.245.38",
+		"url" : "www.linkedin.com/li/track/",
+		"host" : "www.linkedin.com",
+		"rsp_code" : "200"
+	},
+	"Baidu" : {
+		"ip" : "153.3.236.50",
+		"url" : "news.baidu.com/widget",
+		"host" : "news.baidu.com",
+		"rsp_code" : "200"
+	},
+	"Facebook" : {
+		"ip" : "31.13.77.37",
+		"url" : "www.facebook.com/ajax/bz",
+		"host" : "www.facebook.com",
+		"rsp_code" : "200"
+	},
+	"Twitter" : {
+		"ip" : "104.244.42.65",
+		"url" : "twitter.com/i/jot",
+		"host" : "twitter.com",
+		"rsp_code" : "200"
+	},
+	"Taobao" : {
+		"ip": "66.231.239.122",
+		"url": "www.taobao.com/",
+		"host": "www.taobao.com",
+		"rsp_code": "302"
+	},
+	"Yahoo" : {
+		"ip" : "206.190.36.105",
+		"url" : "www.yahoo.com/news/_td/api/resource",
+		"host" : "www.yahoo.com",
+		"rsp_code" : "200"
+	},
+	"NetFlix" : {
+		"ip" : "52.42.21.117",
+		"url" : "ichnaea.netflix.com/log",
+		"host" : "ichnaea.netflix.com",
+		"rsp_code" : "202"
+	},
+	"Sina" : {
+		"ip" : "203.90.242.124",
+		"url" : "login.sina.com/cn/",
+		"host" : "login.sina.com",
+		"rsp_code" : "200"
+	},
+	"Atlassian" : {
+		"ip": "104.192.138.35",
+		"url": "holonetsecurity.atlassian.net/",
+		"host": "holonetsecurity.atlassian.net",
+		"rsp_code": "200"
+	},
+	"Zendesk" : {
+		"ip" : "192.161.147.1",
+		"url" : "holonetsecurity.zendesk.com/embeddable/config",
+		"host" : "holonetsecurity.zendesk.com",
+		"rsp_code" : "200"
+	},
+	"MySpace" : {
+		"ip" : "63.135.90.195",
+		"url" : "b12.myspace.com/b12/siCLy_CfGRSH4A",
+		"host" : "b12.myspace.com",
+		"rsp_code" : "200"
+	},
+	"Godaddy" : {
+		"ip" : "104.86.201.16",
+		"url" : "account.godaddy.com/products/",
+		"host" : "account.goddady.com",
+		"rsp_code" : "200"
+	},
+	"Pinterest" : {
+		"ip" : "151.101.0.84",
+		"url" : "www.pinterest.com/resource/",
+		"host" : "www.pinterest.com",
+		"rsp_code" : "200"
+	},
+	"Tumblr" : {
+		"ip" : "215.115.100.124",
+		"url" : "platform.tumblr.com/v1/",
+		"host" : "platform.tumblr.com",
+		"rsp_code" : "200"
+	},
+	"Docusign" : {
+		"ip" : "172.16.32.106",
+		"url" : "www.docusign.com/sites/all/",
+		"host" : "www.docusign.com",
+		"rsp_code" : "200"
+	},
+	"Instagram" : {
+		"ip" : "31.13.77.52",
+		"url" : "www.instagram.com/p/",
+		"host" : "www.instagram.com",
+		"rsp_code" : "200"
+	},
+	"Adobe" : {
+		"ip" : "23.63.151.24",
+		"url" : "armmf.adobe.com/arm-manifests/",
+		"host" : "armmf.adobe.com",
+		"rsp_code" : "200"
+	},
+	"Holonet" : {
+		"ip" : "54.183.87.79",
+		"url" : "onfire.holonetsecurity.com/assets/charts",
+		"host" : "onfire.holonetsecurity.com",
+		"rsp_code" : "200"
+	},
+	"QQ" : {
+		"ip" : "61.135.157.156",
+		"url" : "www.qq.com/",
+		"host" : "www.qq.com",
+		"rsp_code" : "200"
+	},
+	"Net Ease 163" : {
+		"ip" : "52.40.70.7",
+		"url" : "lbs.netease.im/lbs/",
+		"host" : "lbs.netease.com",
+		"rsp_code" : "200"
+	},
+	"AliPay" : {
+		"ip" : "110.76.20.11",
+		"url" : "secclientgw.alipay.com/config/",
+		"host" : "secclientgw.alipay.com",
+		"rsp_code" : "200"
+	},
+	"360" : {
+		"ip" : "182.118.31.226",
+		"url" : "s.360.cn/qdas/s/",
+		"host" : "s.360.cn",
+		"rsp_code" : "200"
+	},
+	"SpiceWorks" : {
+		"ip" : "52.207.59.11",
+		"url" : "gekko.spiceworks.com/px/rtb/",
+		"host" : "gekko.spiceworks.com",
+		"rsp_code" : "200"
+	},
+	"JD" : {
+		"ip" : "211.144.24.78",
+		"url" : "x.jd.com/exsites",
+		"host" : "x.jd.com",
+		"rsp_code" : "200"
+	},
+	"Slack" : {
+		"ip" : "13.32.194.162",
+		"url" : "slack.com/beacon/timing",
+		"host" : "slack.com",
+		"rsp_code" : "200"
+	},
+	"Fedex" : {
+		"ip" : "104.86.193.24",
+		"url" : "www.fedex.com/wdpl/wdpl",
+		"host" : "www.fedex.com",
+		"rsp_code" : "200"
+	},
+	"Gitbook" : {
+		"ip" : "104.25.212.20",
+		"url" : "www.gitbook.com/book/",
+		"host" : "www.gitbook.com",
+		"rsp_code" : "200"
+	},
+	"Zhihu" : {
+		"ip" : "104.96.115.82",
+		"url" : "www.zhihu.com/lastread/touch",
+		"host" : "www.zhihu.com",
+		"rsp_code" : "200"
+	},
+	"Sangfor" : {
+		"ip" : "113.105.88.153",
+		"url" : "www.sangfor.com.cn/",
+		"host" : "www.sangfor.com.cn",
+		"rsp_code" : "200"
+	},
+	"CSDN" : {
+		"ip" : "117.122.217.6",
+		"url" : "dc.csdn.net/re",
+		"host" : "dc.csdn.net",
+		"rsp_code" : "200"
+	},
+	"GoogleDrive" : {
+		"ip" : "172.217.5.97",
+		"url" : "googledrive.com/p/host/",
+		"host" : "googledrive.com",
+		"rsp_code" : "206"
+	},
+	"Office365Mail" : {
+		"ip" : "40.78.68.109",
+		"url" : "ocws.officeapps.live.com/ocs/docs/",
+		"host" : "ocws.officeapps.live.com",
+		"rsp_code" : "200"
+	},
+	"Yammer" : {
+		"ip" : "13.107.6.159",
+		"url" : "www.yammer.com/api/v1/",
+		"host" : "www.yammer.com",
+		"rsp_code" : "200"
+	},
+	"Amazon Web Services" : {
+		"ip" : "54.239.30.25",
+		"url" : "console.aws.amazon.com/p/log/1/",
+		"host" : "console.aws.amazon.com",
+		"rsp_code" : "200"
+	}
+}
