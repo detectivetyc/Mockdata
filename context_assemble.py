@@ -4,6 +4,7 @@ from random import choice
 from read_sql import ReadSQL
 import random, string
 
+#Unused
 def context_dict_process(context_dict, context, user, table, session_id, sigid):
     key_ret = context_dict[context]
     key_ret = key_ret[1:len(key_ret) - 1]

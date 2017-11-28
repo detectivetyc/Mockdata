@@ -29,11 +29,9 @@ def run_file_log(threadName, download_log_num, upload_log_num, table, buffer):
             file_log = FileLog(redis_instance.redis_connection, table, user)
             file_volume_log = AieVolumeLog(file_log)
             content_scan = ContentScanLog(table, file_log)
-            #user = 'User_1'
             file_log.log_process(buffer)
-            time.sleep(2)
             file_volume_log.log_process()
-            time.sleep(2)
+            time.sleep(1)
             content_scan.log_process(buffer)
             del user
             del file_log
@@ -45,11 +43,9 @@ def run_file_log(threadName, download_log_num, upload_log_num, table, buffer):
             file_log = FileLog(redis_instance.redis_connection, table, user)
             file_volume_log = AieVolumeLog(file_log)
             content_scan = ContentScanLog(table, file_log)
-            #user = 'User_1'
             file_log.log_process(buffer)
-            time.sleep(2)
             file_volume_log.log_process()
-            time.sleep(2)
+            time.sleep(1)
             content_scan.log_process(buffer)
             del user
             del file_log

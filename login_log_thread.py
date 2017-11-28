@@ -29,7 +29,6 @@ def run_login_log(threadName, log_num, table, buffer):
         login_volume_log = AieVolumeLog(login_log)
         #user = 'User_2'
         login_log.log_process(buffer)
-        time.sleep(2)
         login_volume_log.log_process()
         del user
         del login_log

@@ -1,6 +1,6 @@
 {
     "Restful" : {
-        "ip" : "54.85.229.0",
+        "ip" : "54.231.131.56",
         "url" : "/admin/uplog/",
         "host" : "www.google.com",
         "rsp_code" : "200"
@@ -9,12 +9,6 @@
         "ip" : "107.152.25.197",
         "url" : "api.box.com/oauth2/token/",
         "host" : "api.box.com",
-        "rsp_code" : "200"
-    },
-    "Dropbox" : {
-        "ip" : "162.125.2.1",
-        "url" : "www.dropbox.com/prompt/ha",
-        "host" : "www.dropbox.com",
         "rsp_code" : "200"
     },
     "Salesforce" : {

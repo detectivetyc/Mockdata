@@ -1,40 +1,40 @@
 {
 	"User_1": {
 		"alias" : ["user1_1@gmail.com", "user1_2@hotmail.com"],
-		"devices" : ["mac_1"],
-		"apps" : ["all"],
+		"devices" : ["mac_1", "windows_1"],
+		"apps" : ["Sina"],
 		"event" : {
 			"download" : {
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": "AABB.txt"
+				"filename": ""
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": "AABB.txt"
+				"filename": ""
 			}
 		},
 		"special" : "same_file"
 	},
 	"User_2": {
 		"alias" : ["user2@yahoo.com"],
-		"devices" : ["linux_1", "windows_1"],
+		"devices" : ["linux_1"],
 		"apps" : ["all"],
 		"event" : {
 			"download" : {
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Aasml.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Dsanjk.txt"
 			}
 		},
 		"special" : null
@@ -48,13 +48,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Bdsfn.doc"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Aqwe.pdf"
 			}
 		},
 		"special" : null
@@ -68,13 +68,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Afnjk.txt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "CCsmk.txt"
 			}
 		},
 		"special" : null
@@ -88,13 +88,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "ABqwe.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BBfs.pdf"
 			}
 		},
 		"special" : null
@@ -108,13 +108,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BCsjnk.doc"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "CssdaA.xlsx"
 			}
 		},
 		"special" : null
@@ -128,13 +128,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BCbdw.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "DDsdf.txt"
 			}
 		},
 		"special" : null
@@ -148,13 +148,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "CrwD.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BAdf.xlsx"
 			}
 		},
 		"special" : null
@@ -168,13 +168,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Casd.txt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "CwqqP.doc"
 			}
 		},
 		"special" : null
@@ -188,13 +188,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "A2vsE.xlsx"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "DzxSa.doc"
 			}
 		},
 		"special" : null
@@ -208,13 +208,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "AtA.txt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "AAqw2.pdf"
 			}
 		},
 		"special" : null
@@ -228,13 +228,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Dd5A.txt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "vDfs.pdf"
 			}
 		},
 		"special" : null
@@ -248,13 +248,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "B123.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "S112a.doc"
 			}
 		},
 		"special" : null
@@ -268,13 +268,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Cnjdf.doc"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "AvxcD.pdf"
 			}
 		},
 		"special" : null
@@ -288,13 +288,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Bdas.pdf"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Cdas.xlsx"
 			}
 		},
 		"special" : null
@@ -308,13 +308,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Chdf.txt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "AAe.pdf"
 			}
 		},
 		"special" : null
@@ -328,13 +328,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "fgnC.doc"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "Bfsd.txt"
 			}
 		},
 		"special" : null
@@ -348,13 +348,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BnD.ppt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "ABaas.doc"
 			}
 		},
 		"special" : null
@@ -368,13 +368,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BACtzE.ppt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "BAqqrD.txt"
 			}
 		},
 		"special" : null
@@ -388,13 +388,13 @@
 				"apps": ["Restful"],
 				"pattern_name" : ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "ABxcsS.ppt"
 			},
 			"upload" : {
 				"apps": ["Restful"],
 				"pattern_name": ["all"],
 				"subfile": "false",
-				"filename": ""
+				"filename": "zxAwerE.xlsx"
 			}
 		},
 		"special" : null

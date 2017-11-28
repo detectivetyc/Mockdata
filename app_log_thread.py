@@ -28,7 +28,6 @@ def run_app_log(threadName, log_num, table, buffer):
         app_log = AppLog(redis_instance.redis_connection, table, user)
         app_volume_log = AieVolumeLog(app_log)
         app_log.log_process(buffer)
-        time.sleep(2)
         app_volume_log.log_process()
         del user
         del app_log

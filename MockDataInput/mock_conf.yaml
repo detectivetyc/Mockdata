@@ -14,9 +14,9 @@ sql:
   service: service.sql
 #how many logs(different types) do you want?
 log_num:
-  app_log_num: 20
-  login_log_num: 40
-  download_log_num: 100
+  app_log_num: 0
+  login_log_num: 1
+  download_log_num: 0
   upload_log_num: 0
 #gw & aie configuration
 #dev
@@ -60,4 +60,4 @@ time:
   mins: 59
 #Output Path
 Output:
-  path: /Users/yuchentang/Desktop/MockDataLog/11.17/
+  path: /Users/yuchentang/Desktop/MockDataLog/11.28/

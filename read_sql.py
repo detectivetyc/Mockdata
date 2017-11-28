@@ -58,13 +58,16 @@ class ReadSQL:
                     if len(list_tmp[i]) > 5 and list_tmp[i][5] == "\'\"success\":true\'":
                         return list_tmp[i][0]
                     else:
-                        return list_tmp[0][0]
+                        continue
+                return list_tmp[0][0]
             else:
                 return list_tmp[0][0]
         else:
             return list_by_appname[0][0]
     @classmethod
     def get_element_by_sigid(cls, sigid, element_list):
+        if sigid is None or element_list is None:
+            sys.exit("Something wrong with get_element_by_sigid")
         list_by_sigid = ReadSQL.find_by_sigid(sigid, element_list)
         context_dict = {}
         for i in range(len(list_by_sigid)):
