@@ -85,6 +85,7 @@ class Table:
             return self.uploads[appname][item_name]
         else:
             return None
+
     def get_items_from_pattern_json(self):
         self.name_list = []
         self.name_group_dict = {}

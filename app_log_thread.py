@@ -6,6 +6,7 @@ from redis_connection import RedisConnection
 from read_configuration import ReadConfiguration
 from aie_volume_log import AieVolumeLog
 from user import User
+from check_es import CheckES
 
 class AppLogThread(threading.Thread):
     def __init__(self, threadID, name, log_num, table, buffer):
@@ -29,6 +30,10 @@ def run_app_log(threadName, log_num, table, buffer):
         app_volume_log = AieVolumeLog(app_log)
         app_log.log_process(buffer)
         app_volume_log.log_process()
+        checkES = CheckES('http://dev-ds.holonetsecurity.com:9200', app_log)
+        time.sleep(1)
+        total = checkES.check_log_exist()
+        print total
         del user
         del app_log
         del app_volume_log

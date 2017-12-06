@@ -2,7 +2,7 @@
 	"User_1": {
 		"alias" : ["user1_1@gmail.com", "user1_2@hotmail.com"],
 		"devices" : ["mac_1", "windows_1"],
-		"apps" : ["Sina"],
+		"apps" : ["all"],
 		"event" : {
 			"download" : {
 				"apps": ["Restful"],
