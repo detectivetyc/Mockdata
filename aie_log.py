@@ -37,10 +37,11 @@ class AieLog():
         log_lf = 0  # hard coded
         # sig_id
         self.sigid = self.get_sigid()
+        self.sigid = self.sigid[1: len(self.sigid) - 1]
         # log message head
         message_head = str(self.timestamp) + " " + gw_id + " " + aie_id \
                        + " " + ip_seg + " " + str(log_type) + " " \
-                       + self.sigid[1: len(self.sigid) - 1] + " " + str(log_version) + " " \
+                       + self.sigid + " " + str(log_version) + " " \
                        + str(log_id) + " " + str(log_seq_num) + " " + str(log_lf)
         # log message body
         self.message_body_process(buffer)
@@ -175,7 +176,7 @@ class AieLog():
                 body += self.string_format(context, self.user_id)
             elif context == 'user_token':
                 # user_token
-                self.user_token = 'ABCDEFGHIJKLMNOPQ'
+                self.user_token = self.generate_token(random.randint(10, 20))
                 #body += "\"user_token\":" + "\"" +self.user_token + "\","
                 body += self.string_format(context, self.user_token)
             else:
@@ -202,13 +203,19 @@ class AieLog():
             self.message_body += "," + "\"activity\":\"" + self.activity[1 : len(self.activity) - 1] + "\"," + self.objs + "}"
         else:
             self.message_body += "}"
+        #output("login_log1.log", self.message_body)
         message_body_json = json.dumps(self.message_body)
+        #output("login_log1.log", message_body_json)
         self.message_body = json.loads(message_body_json)
+        #output("login_log1.log", self.message_body)
 
     def generate_random_hash(self, size = 32):
         return ''.join(random.choice(string.ascii_lowercase[0:6] + string.digits) for _ in range(size))
 
     def generate_file_name(self, size = 8):
+        return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(size))
+
+    def generate_token(self, size):
         return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(size))
 
     def string_format(self, context, value):
@@ -219,6 +226,7 @@ class AieLog():
         else:
             str += "\"%s\":\"%s\"," % (context, value)
             return str
+
     def get_item_from_buffer(self, key, buffer):
         if self.table.users[self.user.user_id]['special'] == 'same_file':
             if buffer.has_key(key):

@@ -12,7 +12,6 @@ import psutil
 import os
 
 
-
 def main():
 	#print 'memory used: ', psutil.Process(os.getpid()).memory_info().rss
 	redis_instance = RedisConnection(ReadConfiguration.redis_port, ReadConfiguration.redis_host, ReadConfiguration.redis_db)
